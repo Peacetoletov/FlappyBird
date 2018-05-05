@@ -27,7 +27,7 @@ public class GameLoop {
     public void run() {
         init();
         while (running) {
-            System.out.println("test");
+            //System.out.println("test");
             update();
             render();
 
@@ -45,7 +45,7 @@ public class GameLoop {
         }
 
         glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
-        window = glfwCreateWindow(WIDTH, HEIGHT, "Flappy bird", NULL, NULL);
+        window = glfwCreateWindow(WIDTH, HEIGHT, "Flappy Börd", NULL, NULL);
         if (window == NULL) {
             //Handle later
             System.out.println("fail 2");
